@@ -21,6 +21,13 @@ docker run --restart always -itd --name xdag -v `pwd`/data:/opt/data -p 7667:766
 docker run --restart always -itd --name xdag -e "pool_addr=solo.xdag.org:13655" -v `pwd`/data:/opt/data -p 7667:7667 xdag
 ```
 
+After started, enable transfer:
+
+```
+rpc xfer enable
+rpc white disable
+```
+
 
 # Using pre-built docker image
 
